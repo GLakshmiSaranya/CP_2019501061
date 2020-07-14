@@ -17,9 +17,9 @@ def fun_matrixmultiply(m1, m2):
             while len(res[-1]) < c2:
                 res[-1].append(0)
         
-        for i in range(len(m1)):
-            for j in range(len(m2[0])):
-                for k in range(m1[0]):
+        for i in range(r1):
+            for j in range(c2):
+                for k in range(r2):
                     res[i][j] += m1[i][k] * m2[k][j]
         return res
     return None
