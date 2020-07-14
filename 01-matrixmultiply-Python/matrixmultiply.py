@@ -25,4 +25,5 @@ def fun_matrixmultiply(m1, m2):
         for i in res:
             print(i)
         return res
-    return None
+    else:
+        return None
