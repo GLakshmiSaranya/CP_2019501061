@@ -13,4 +13,7 @@ def fun_find_int_roots(a, b, c):
 	root1 = ((-b) + sqrt(d) / (2 * a))
 	root2 = ((-b) - sqrt(d) / (2 * a))
 
-	return root1, root2
+	if root1 < root2:
+		return root1, root2
+	else:
+		return root2, root1
