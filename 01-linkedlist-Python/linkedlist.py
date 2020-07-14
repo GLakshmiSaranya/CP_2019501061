@@ -37,6 +37,7 @@ class LinkedList(object):
         element = Element(position)
         element.next = new_element.next
         new_element.next = element
+        
         pass
     
     
