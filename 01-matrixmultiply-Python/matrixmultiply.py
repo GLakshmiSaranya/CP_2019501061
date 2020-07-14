@@ -21,5 +21,8 @@ def fun_matrixmultiply(m1, m2):
             for j in range(c2):
                 for k in range(r2):
                     res[i][j] += m1[i][k] * m2[k][j]
+        
+        for i in res:
+            print(i)
         return res
     return None
