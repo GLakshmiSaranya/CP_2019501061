@@ -12,7 +12,7 @@ def fun_matrixmultiply(m1, m2):
     
     if c1 == r1:
         res = []
-        while len(r) < r1:
+        while len(res) < r1:
             res.append([])
             while len(res[-1] < c2):
                 res[-1].append(0)
