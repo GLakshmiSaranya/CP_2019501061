@@ -10,7 +10,7 @@ import math
 def fun_find_int_roots(a, b, c):
 	d = (b ** 2) - (4 * a *c)
 	root1 = (-b) + (d ** 0.5) / (2 * a)
-	root2 = (-b) + (d ** 0.5) / (2 * a)
+	root2 = (-b) - (d ** 0.5) / (2 * a)
 
 	if root1 < root2:
 		return root1, root2
