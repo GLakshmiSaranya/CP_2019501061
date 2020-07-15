@@ -39,7 +39,7 @@ class LinkedList(object):
                 return None
             else:
                 temp = temp.next
-        return temp.value
+        return temp
         pass
     
     def insert(self, new_element, position):
