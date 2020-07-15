@@ -53,9 +53,9 @@ class LinkedList(object):
             new_element.next = temp
             self.head = new_element
             return
+        
         for i in range(1, position):
-            prev = temp.next
-            new_element.next = prev
+            new_element.next = temp.next
             temp.next = new_element
         pass
       
