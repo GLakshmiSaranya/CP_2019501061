@@ -37,11 +37,13 @@ class LinkedList(object):
         element = Element(position)
         element.next = new_element.next
         new_element.next = element
-        
+
         pass
     
     
     def delete(self, value):
         """Delete the first node with a given value."""
         # Your code goes here
+        current_node = self.head
+        
         pass
