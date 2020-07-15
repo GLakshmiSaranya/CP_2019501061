@@ -20,12 +20,12 @@ class LinkedList(object):
     def append(self, new_element):
         # Your code goes here
         temp = self.head
-        if not self.head:
-            self.head = new_element
-        else:
+        if self.head:
             while temp.next:
                 temp = temp.next
             temp.next = new_element
+        else:
+            self.head = new_element
         pass
             
     def get_position(self, position):
@@ -39,7 +39,7 @@ class LinkedList(object):
                 return None
             else:
                 temp = temp.next
-        return temp.value
+        return temp
         pass
     
     def insert(self, new_element, position):
