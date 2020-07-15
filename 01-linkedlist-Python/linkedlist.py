@@ -57,9 +57,6 @@ class LinkedList(object):
                 prev = temp.next
                 new_element.next = prev
                 temp.next = new_element
-
-
-
         pass
     
     
