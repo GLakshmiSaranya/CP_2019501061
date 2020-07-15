@@ -52,11 +52,11 @@ class LinkedList(object):
         if position == 1:
             new_element.next = temp
             self.head = new_element
-        else:
-            for i in range(1, position):
-                prev = temp.next
-                new_element.next = prev
-                temp.next = new_element
+            return
+        for i in range(1, position):
+            prev = temp.next
+            new_element.next = prev
+            temp.next = new_element
         pass
     
     
@@ -66,6 +66,8 @@ class LinkedList(object):
         temp = self.head
         if temp.value == value:
             current_next = temp.next
+            self.head = current_next
+            return
         else:
             while temp.next:
                 if temp.next.value == value:
