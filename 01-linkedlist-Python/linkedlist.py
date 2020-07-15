@@ -58,8 +58,7 @@ class LinkedList(object):
             new_element.next = prev
             temp.next = new_element
         pass
-    
-    
+      
     def delete(self, value):
         """Delete the first node with a given value."""
         # Your code goes here
