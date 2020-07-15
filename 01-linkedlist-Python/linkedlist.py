@@ -64,16 +64,14 @@ class LinkedList(object):
         """Delete the first node with a given value."""
         # Your code goes here
         temp = self.head
-        if temp.value == value:
-            current_next = temp.next
-            self.head = current_next
-            return
-        else:
-            while temp.next:
-                if temp.next.value == value:
-                    current_next = temp.next.next
-                    temp.next = current_next
-                    break
+        prev = None
+
+        while temp:
+            if temp.value == value:
+                if prev:
+                    prev.next = temp.next
                 else:
-                    temp = temp.next
+                    self.head = temp.next
+            prev = temp
+            temp = temp.next
         pass
