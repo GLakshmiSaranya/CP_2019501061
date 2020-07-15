@@ -33,6 +33,13 @@ class LinkedList(object):
         Assume the first position is "1".
         Return "None" if position is not in the list."""
         # Your code goes here
+        temp = self.head
+        for i in range(1, position):
+            if temp.value == None:
+                return None
+            else:
+                temp = temp.next
+            return temp.value
         pass
     
     def insert(self, new_element, position):
