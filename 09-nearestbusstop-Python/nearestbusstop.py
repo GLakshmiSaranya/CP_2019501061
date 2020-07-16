@@ -5,7 +5,11 @@
 # so the nearest bus stop to 12th street is 8th street, 
 # and the nearest bus stop to 13 street is 16th street.
 
-
-
 def fun_nearestbusstop(street):
-	return -1
+	stop = street % 8
+
+	if stop == 4:
+		return stop - 4
+	if stop < 4:
+		retun (street - value)
+	return (street - value + 8)
