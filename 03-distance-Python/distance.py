@@ -9,4 +9,4 @@ def fun_distance(x1, y1, x2, y2):
 	X = (x2 - x1) ** 2
 	Y = (y2 - y1) ** 2
 	dist = (X + Y) ** 0.5
-	return dist
+	return int(dist)
