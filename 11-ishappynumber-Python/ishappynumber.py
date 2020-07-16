@@ -27,4 +27,3 @@ def ishappynumber(n):
 		return True
 	else:
 		return False
-	pass
