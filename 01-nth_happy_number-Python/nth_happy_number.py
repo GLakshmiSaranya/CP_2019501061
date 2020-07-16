@@ -12,5 +12,4 @@
 
 
 def fun_nth_happy_number(n):
-	
 	return 0
