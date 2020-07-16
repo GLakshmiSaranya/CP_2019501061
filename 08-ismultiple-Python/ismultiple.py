@@ -3,7 +3,9 @@
 # Note that 0 is a multiple of every integer including itself. 
 # Also, you should make constructive use of the isFactor function you just wrote above.
 
-
-
 def fun_ismultiple(m, n):
-	return False # replace with your solution
+	if n == 0 and m != 0:
+		return False
+	if m == 0 or m % n == 0:
+		return True
+	return False
