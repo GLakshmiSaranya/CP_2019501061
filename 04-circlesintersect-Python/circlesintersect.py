@@ -7,8 +7,9 @@ import math
 
 def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	# your code goes here
-	X = math.abs(x2 - x1) ** 2
-	Y = math.abs(y2 - y1) ** 2
+	X = math.sqrt(x2 - x1, 2)
+	Y = math.sqrt(y2 - y1, 2)
+
 	R = (r1 + r2) ** 2
 
 	if R == (X + Y):
