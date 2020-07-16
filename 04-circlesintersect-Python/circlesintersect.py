@@ -10,7 +10,7 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	X = math.pow(x2 - x1, 2)
 	Y = math.pow(y2 - y1, 2)
 
-	R = (r1 + r2) ** 2
+	R = math.pow(r1 + r2, 2)
 
 	if R == (X + Y):
 		return True
