@@ -11,6 +11,6 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	Y = (y2 - y1) ** 2
 	R = (r1 + r2) ** 2
 
-	if R == X + Y:
+	if R == (X + Y):
 		return True
 	return False
