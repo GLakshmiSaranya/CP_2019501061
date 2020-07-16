@@ -13,7 +13,7 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	
 	dist = math.sqrt(X + Y)
 	
-	if dist < (r1 - r2) or dist < (r2 - r1) or dist > (r1 + r2):
+	if dist < (r1 - r2) or dist < (r2 - r1):
 		return True
 	else:
 		return False
