@@ -6,8 +6,8 @@
 
 def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	# your code goes here
-	X = (x2 - x1) ** 2
-	Y = (y2 - y1) ** 2
+	X = math.abs(x2 - x1) ** 2
+	Y = math.abs(y2 - y1) ** 2
 	R = (r1 + r2) ** 2
 
 	if R == (X + Y):
