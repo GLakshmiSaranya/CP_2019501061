@@ -28,10 +28,10 @@ def isHappyNumber(n):
 		sum = 0
 
 		while n > 0:
-			sum += (num % 10) ** 2
+			sum += (n % 10) ** 2
 			n /= 10
 		n = sum
 	if sum == 1:
 		return True
 	else:
-		return Falsee
+		return False
