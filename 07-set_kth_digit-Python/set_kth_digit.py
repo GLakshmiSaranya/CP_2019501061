@@ -5,6 +5,8 @@
 # so the 0th digit is the rightmost digit. 
 
 def fun_set_kth_digit(n, k, d):
+	flag = False
+
 	if n < 0:
 		flag = True
 		n = n * -1
@@ -14,6 +16,9 @@ def fun_set_kth_digit(n, k, d):
 
 	if k > length:
 		return 0
+	
+	#print(num[length - k : ])
+	
 	if k == length:
 		num = str(d) + num[length - k : ]
 	else:
