@@ -37,7 +37,7 @@ locations = {'North America': {'USA': ['Mountain View', 'Atlanta']},
 
 def sortUSA():
     usa_cities = locations.get('North America').get('USA')
-    #usa_cities.sort()
+    usa_cities.sort()
     # for i in usa_cities:
     #     print(i)
     return usa_cities
