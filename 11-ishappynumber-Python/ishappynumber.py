@@ -18,15 +18,14 @@ def ishappynumber(n):
 	# your code goes here
 	if n == 1:
 		return True
-	sum = 0
-	while sum != 1 and sum != 4:
+	sum = n
+	while sum > 9:
 		sum = 0
 		while n > 0:
 			sum += (n % 10) ** 2
 			n //= 10
-		n = sum
-	
-	if sum == 1:
-		return True
-	else:
-		return False
+		if sum == 1:
+			return True
+		else:
+			n = sum
+	return False
