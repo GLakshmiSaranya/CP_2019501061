@@ -24,7 +24,7 @@ def ishappynumber(n):
 			n /= 10
 		n = sum
 	
-	if n == 1:
+	if sum == 1:
 		return True
 	else:
 		return False
