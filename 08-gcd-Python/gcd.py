@@ -15,6 +15,7 @@ def gcd(m, n):
 	temp = n
 	while temp != 0:
 		temp = m % n
-		m = nn = temp
+		m = n
+		n = temp
 	return temp
 	pass
