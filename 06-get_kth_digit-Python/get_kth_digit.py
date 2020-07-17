@@ -10,5 +10,5 @@ def fun_get_kth_digit(digit, k):
 	if k >= length:
 		return 0
 	digit = num[length - 1 - k]
-	print(digit)
+	print(digit + " " + type(digit))
 	return digit
