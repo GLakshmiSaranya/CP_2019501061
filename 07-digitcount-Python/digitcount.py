@@ -8,7 +8,7 @@
 def digitcount(n):
 	# your code goes here
 	n = abs(n)
-	count = 0
+	count = 1
 
 	while n > 0:
 		n //= 10
