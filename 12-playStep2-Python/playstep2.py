@@ -42,7 +42,7 @@ def playstep2(hand, dice):
 	if length == 3:
 		hand = [max(hand)]
 
-	for i in range(0, count):
+	for i in range(1, count + 1):
 		rem = dice % 10
 		dice //= 10
 		hand.append(rem)
