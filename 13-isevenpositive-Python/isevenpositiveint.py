@@ -6,7 +6,7 @@
 
 def isevenpositiveint(x):
 	# your code goes here
-	if isinstance(x) == int:
+	if isinstance(x, int):
 		if x > 0:
 			if x % 2 == 0:
 				return True
