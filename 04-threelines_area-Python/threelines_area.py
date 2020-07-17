@@ -6,6 +6,8 @@ import math
 
 def fun_threelines_area(a, b, c):
 	S = (a + b + c) / 2
-	area = S * (S - a) * (S - b) * (S - c)
-	area = math.sqrt(area)
-	return area
+	a = S * (S - a) * (S - b) * (S - c)
+	area = math.sqrt(a)
+	# print(area)
+	# print(int(area))
+	return int(area)
