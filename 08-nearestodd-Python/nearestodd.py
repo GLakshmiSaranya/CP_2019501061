@@ -9,5 +9,7 @@ def fun_nearestodd(n):
 	if n % 2 == 0:
 		print(n - 1)
 		return n - 1
-	print(n)
-	return n
+	if n % 10 == 0:
+		print(n)
+		return n
+	return n + 1
