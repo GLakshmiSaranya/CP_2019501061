@@ -30,4 +30,40 @@
 
 def playstep2(hand, dice):
 	# your code goes here
+	hand = list(handtodice(hand))
+
+	for h in hand:
+		if hand.count(h) > 1:
+			for i in hand:
+				if h == i:
+					hand.append(i)
+
+	length = len(hand)
+	count = 3 - length
+	
+	if length == 3:
+		hand = [max(hand)]
+
+	for i in range(1, count):
+		rem = dice % 10
+		dice //= 10
+		hand.append(rem)
+	
+	res = dicetoorderedhand((hand[0], hand[1], hand[2]), dice)
+	return res
 	pass
+
+def handtodice(hand):
+	values = []
+	while hand > 0:
+		rem = hand % 10
+		values.append(rem)
+		hand //= 10
+	values.reverse()
+	return tuple(values)
+	
+def dicetoorderedhand(a, b, c):
+	hand = [a, b, c]
+	hand.sort()
+	dice = (hand[-1] * 100) + (hand[-2] * 10) + hand[0]
+	return dice
