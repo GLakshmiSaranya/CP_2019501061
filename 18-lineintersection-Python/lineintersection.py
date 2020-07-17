@@ -9,7 +9,7 @@ def lineintersection(m1, b1, m2, b2):
 	if m1 == m2:
 		return None
 	
-	x = abs(b1 - b2) // (m1 - m2)
+	x = abs(b1 - b2) // abs(m1 - m2)
 	if x == 1:
 		return None
 	return x
