@@ -34,8 +34,7 @@ def playstep2(hand, dice):
 
 	for h in hand:
 		if hand.count(h) > 1:
-			for i in hand:
-				hand = [j for j in hand if h == j]
+			hand = [i for i in hand if h == i]
 
 	length = len(hand)
 	count = 3 - length
