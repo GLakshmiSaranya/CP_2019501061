@@ -5,8 +5,13 @@
 
 def isperfectsquare(n):
 	# your code goes here
-	m = n ** 0.5
-	if int(m) == m:
+	if n < 0:
+		return False
+	if type(n) == str:
+		n = int(n)
+	
+	m = (n ** 0.5)
+	if (m ** 2) == n:
 		return True
 	else:
 		return False
