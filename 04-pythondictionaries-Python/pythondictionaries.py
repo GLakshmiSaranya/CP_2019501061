@@ -37,7 +37,8 @@ locations = {'North America': {'USA': ['Mountain View', 'Atlantla']},
 
 def sortUSA():
     asia_cities = locations.get('North America').get('USA')
-    return asia_cities.sort()
+    asia_cities.sort()
+    return asia_cities
 
 def alphaAsia():
     countries = locations.get('Asia')
@@ -46,5 +47,6 @@ def alphaAsia():
     for c in countries.keys():
         for d in countries.get(c):
             asia_cities.append(d + "-" + c)
+    asia_cities.sort()
 
-    return asia_cities.sort()
+    return asia_cities
