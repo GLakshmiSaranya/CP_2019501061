@@ -4,4 +4,11 @@
 
 def hasconsecutivedigits(n):
 	# your code goes here
+	num = abs(n)
+	while num > 0:
+		rem = num % 10
+		num //= 10
+		if rem == num % 10:
+			return True
+	return False
 	pass
