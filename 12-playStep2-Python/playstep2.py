@@ -31,7 +31,6 @@
 def playstep2(hand, dice):
 	# your code goes here
 	hand = list(handtodice(hand))
-
 	for h in hand:
 		if hand.count(h) > 1:
 			hand = [i for i in hand if h == i]
@@ -40,6 +39,7 @@ def playstep2(hand, dice):
 	if length == 3:
 		hand = [max(hand)]
 	count = 3 - length
+	
 	for i in range(1, count + 1):
 		rem = dice % 10
 		dice //= 10
