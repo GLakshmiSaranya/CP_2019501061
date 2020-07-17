@@ -4,8 +4,11 @@
 # the kth digit replaced with d. Counting starts at 0 and goes right-to-left, 
 # so the 0th digit is the rightmost digit. 
 
-
-
 def fun_set_kth_digit(n, k, d):
-		return 0
+	num = str(digit)
+	length = len(num)
 
+	if k >= length:
+		return 0
+	num[length - 1 - k] = str(n)
+	return int(num)
