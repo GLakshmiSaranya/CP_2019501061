@@ -10,5 +10,5 @@ def fun_set_kth_digit(n, k, d):
 
 	if k >= length:
 		return 0
-	num[length - 1 - k].replace(str(n))
+	num.replace(str(num[length - 1 - k]), str(n))
 	return int(num)
