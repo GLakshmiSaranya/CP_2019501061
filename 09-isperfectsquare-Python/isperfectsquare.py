@@ -5,4 +5,9 @@
 
 def isperfectsquare(n):
 	# your code goes here
+	m = n ** 0.5
+	if int(m) == m:
+		return True
+	else:
+		return False
 	pass
