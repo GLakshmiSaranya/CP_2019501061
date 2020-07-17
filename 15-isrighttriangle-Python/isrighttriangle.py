@@ -14,7 +14,7 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	sides = [X, Y, Z]
 	sides.sort()
 
-	if ((sides[-1] ** 2) == ((sides[0] ** 2) + (sides[1] ** 2))):
+	if ((sides[2] ** 2) == ((sides[0] ** 2) + (sides[1] ** 2))):
 		return True
 	return False
 	pass
