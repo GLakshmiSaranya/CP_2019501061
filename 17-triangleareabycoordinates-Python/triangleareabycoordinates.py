@@ -7,3 +7,8 @@
 def triangleareabycoordinates(x1, y1, x2, y2, x3, y3):
 	# your code goes here
 	pass
+
+def trianglearea(s1, s2, s3):
+	S = (s1 + s2 + s3) / 2
+	area = (S * (S - s1) * (S - s2) * (S - s3)) ** 0.5
+	return area
