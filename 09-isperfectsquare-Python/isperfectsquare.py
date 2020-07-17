@@ -7,7 +7,9 @@ def isperfectsquare(n):
 	# your code goes here
 	if type(n) == str:
 		n = int(n)
-	
+		if not n.isdigit():
+			return False
+
 	if n < 0:
 		return False
 
