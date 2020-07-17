@@ -12,5 +12,7 @@ def handtodice(hand):
 		rem = hand % 10
 		values.append(rem)
 		hand //= 10
-	return values.reverse()
+	values.reverse()
+	
+	return tuple(values)
 	pass
