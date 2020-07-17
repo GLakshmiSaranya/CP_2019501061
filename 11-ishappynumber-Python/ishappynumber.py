@@ -23,7 +23,8 @@ def ishappynumber(n):
 			sum += (n % 10) ** 2
 			n /= 10
 		n = sum
-	if sum == 1:
+	
+	if n == 1:
 		return True
 	else:
 		return False
