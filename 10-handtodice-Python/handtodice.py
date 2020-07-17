@@ -7,4 +7,10 @@
 
 def handtodice(hand):
 	# your code goes here
+	values = []
+	while hand > 0:
+		rem = hand % 10
+		values.append(rem)
+		hand //= 10
+	return values.reverse
 	pass
