@@ -35,12 +35,11 @@ def playstep2(hand, dice):
 	for h in hand:
 		if hand.count(h) > 1:
 			for i in hand:
-				if h == i:
-					hand.append(i)
+				hand = [j for j in hand if h == j]
 
 	length = len(hand)
 	count = 3 - length
-	
+
 	if length == 3:
 		hand = [max(hand)]
 
@@ -49,8 +48,8 @@ def playstep2(hand, dice):
 		dice //= 10
 		hand.append(rem)
 	
-	res = dicetoorderedhand((hand[0], hand[1], hand[2]), dice)
-	return res
+	res = dicetoorderedhand(hand[0], hand[1], hand[2])
+	return res, dice
 	pass
 
 def handtodice(hand):
