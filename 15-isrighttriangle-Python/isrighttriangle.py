@@ -4,7 +4,7 @@
 # a right triangle and False otherwise. You may wish to write a helper function,
 # distance(x1, y1, x2, y2), which you might call several times. Also, remember to use
 # almostEqual (instead of ==) when comparing floats.
-
+import math
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	# your code goes here
 	X = distance(x1, x2, y1, y2)
@@ -14,10 +14,8 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	sides = [X, Y, Z]
 	sides.sort()
 
-	if ((sides[2] ** 2) == ((sides[0] ** 2) + (sides[1] ** 2))):
-		return True
-	return False
+	return math.isclose(sides[2], sides[0] + sides[1])
 	pass
 
 def distance(x1, x2, y1, y2):
-	return (((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5)
+	return ((x2 - x1) ** 2 + (y2 - y1) ** 2)
