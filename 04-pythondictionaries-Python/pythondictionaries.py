@@ -30,4 +30,21 @@ American City
 Asian City - Country
 Asian City - Country"""
 
-locations = {'North America': {'USA': ['Mountain View']}}
+locations = {'North America': {'USA': ['Mountain View', 'Atlantla']},
+            'Asia': {'India': ['Bangalore'], 'China': ['Shanghai']},
+            'Africa': {'Egypt': ['Cairo']}
+            }
+
+def sortUSA():
+    asia_cities = locations.get('North America').get('USA')
+    return asia_cities.sort()
+
+def alphaAsia():
+    countries = locations.get('Asia')
+    asia_cities = []
+
+    for c in countries.keys():
+        for d in countries.get(c):
+            asia_cities.append(d + "" + c)
+
+    return asia_cities.sort()
