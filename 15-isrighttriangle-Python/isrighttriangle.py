@@ -10,6 +10,13 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	X = distance(x1, x2, y1, y2)
 	Y = distance(x2, x3, y2, y3)
 	Z = distance(x1, x3, y1, y3)
+
+	sides = [X, Y, Z]
+	sides.sort()
+
+	if ((sides[-1] ** 2) == ((sides[0] ** 2) + (sides[1] ** 2))):
+		return True
+	return False
 	pass
 
 def distance(x1, x2, y1, y2):
