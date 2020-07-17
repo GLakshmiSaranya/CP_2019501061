@@ -48,7 +48,7 @@ def playstep2(hand, dice):
 		hand.append(rem)
 	
 	res = dicetoorderedhand(hand[0], hand[1], hand[2])
-	return res, dice
+	return (res, dice)
 	pass
 
 def handtodice(hand):
