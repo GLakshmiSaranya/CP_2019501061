@@ -16,6 +16,8 @@
 
 def ishappynumber(n):
 	# your code goes here
+	if n == 1:
+		return True
 	sum = 0
 	while sum != 1 and sum != 4:
 		sum = 0
