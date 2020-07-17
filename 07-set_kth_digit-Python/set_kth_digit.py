@@ -5,10 +5,20 @@
 # so the 0th digit is the rightmost digit. 
 
 def fun_set_kth_digit(n, k, d):
+	if n < 0:
+		flag = True
+		n = n * -1
+	
 	num = str(n)
 	length = len(num)
 
-	if k >= length:
+	if k > length:
 		return 0
-	num.replace(num[length - 1 - k], str(d))
+	if k == length:
+		num = str(d) + num[length - k : ]
+	else:
+		num = num[:length - 1 - k] + str(d) + num[length - k : ]
+	
+	if flag:
+		return int(num) * -1
 	return int(num)
