@@ -17,7 +17,7 @@
 def ishappynumber(n):
 	# your code goes here
 	sum = 0
-	while sum != 1 or sum!= 4:
+	while n != 1 or n != 4:
 		sum = 0
 		while n > 0:
 			sum += (n % 10) ** 2
