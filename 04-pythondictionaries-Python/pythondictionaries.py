@@ -40,7 +40,7 @@ def sortUSA():
     #usa_cities.sort()
     # for i in usa_cities:
     #     print(i)
-    return usa_cities.sort()
+    return usa_cities
 
 def alphaAsia():
     countries = locations.get('Asia')
@@ -49,5 +49,5 @@ def alphaAsia():
     for c in countries.keys():
         for d in countries.get(c):
             asia_cities.append(d + " - " + c)
-    # asia_cities.sort()
-    return asia_cities.sort()
+    asia_cities.sort()
+    return asia_cities
