@@ -6,7 +6,9 @@
 def fun_nearestodd(n):
 	num = str(n).split(".")
 	int_n = int(num[0])
+	# print(int_n)
 	dec_n = int(num[1])
+	# print(dec_n)
 	
 	if int_n % 2 == 1:
 		return int_n
