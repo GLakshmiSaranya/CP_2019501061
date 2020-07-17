@@ -17,7 +17,7 @@ def fun_nth_happy_number(n):
 	
 	while count <= n:
 		res += 1
-		if (isHappyNumber(res)):
+		if (ishappynumber(res)):
 			count += 1
 	return res
 
