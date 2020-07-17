@@ -49,5 +49,7 @@ def alphaAsia():
     for c in countries.keys():
         for d in countries.get(c):
             asia_cities.append(d + " - " + c)
+    # for i in asia_cities:
+    #     print(i)
     asia_cities.sort()
     return asia_cities
