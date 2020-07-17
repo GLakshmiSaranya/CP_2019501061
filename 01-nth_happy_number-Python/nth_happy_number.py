@@ -19,18 +19,19 @@ def fun_nth_happy_number(n):
 		res += 1
 		if (isHappyNumber(res)):
 			count += 1
-	
 	return res
 
-def isHappyNumber(n):
-	sum = 0
-	while sum != 1 and sum!= 4:
+def ishappynumber(n):
+	if n == 1:
+		return True
+	sum = n
+	while sum > 9:
 		sum = 0
 		while n > 0:
 			sum += (n % 10) ** 2
-			n /= 10
-		n = sum
-	if sum == 1:
-		return True
-	else:
-		return False
+			n //= 10
+		if sum == 1:
+			return True
+		else:
+			n = sum
+	return False
