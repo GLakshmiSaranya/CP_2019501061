@@ -5,17 +5,13 @@
 
 def isrotated(str1, str2):
 	#Your code goes here
-	temp = str1[0]
-
-	if (temp not in str2):
-		return False
-
-	count = 0
-	for i in str2:
-		if temp == i:
-			s = str2[temp: ] + str2[ :temp]
-			if s == str1:
-				return True
-		count += 1
+	len1 = len(str1)
+	
+	for i in range(0, len1):
+		if str1[i: ] + str1[ :i] == str2:
+			return True
+		temp = len1 - i
+		if str1[temp : ] + str1[ : temp] == str2:
+			return True
 	return False
 	pass
