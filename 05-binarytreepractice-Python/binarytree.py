@@ -52,6 +52,6 @@ class BinaryTree(object):
             s = str(start.value)
             print(s + " ")
 
-            self.preorder_print(start.right)
-            self.preorder_print(start.left)
+            preorder_print(start.right)
+            preorder_print(start.left)
         pass
