@@ -9,10 +9,24 @@
 # assert(applyCaesarCipher("We Attack At Dawn", 1) == "Xf Buubdl Bu Ebxo")
 # assert(applyCaesarCipher("zodiac", -2) == "xmbgya")
 
-
 def fun_applycaesarcipher(msg, shift):
-	return ""
+	cipher_text = ''
+	letters = 'abcdefghijklmnopqrstuvwxyz'
 
+	for m in msg:
+		if not m.isalpha():
+			letters += m
+		else:
+			pos = letters.index(m.lower())
+			new_pos = pos + shift
 
+			if new_pos < 0:
+				new_pos += 26
+			elif new_pos > 25:
+				new_pos -= 26
 
-
+			if m.islower():
+				letters += letters[new_pos]
+			elif m.isupper():
+				letters += letters[new_pos].upper()
+	return m
