@@ -15,7 +15,7 @@ def fun_applycaesarcipher(msg, shift):
 
 	for m in msg:
 		if not m.isalpha():
-			letters += m
+			cipher_text += m
 		else:
 			pos = letters.index(m.lower())
 			new_pos = pos + shift
@@ -26,7 +26,8 @@ def fun_applycaesarcipher(msg, shift):
 				new_pos -= 26
 
 			if m.islower():
-				letters += letters[new_pos]
+				cipher_text += letters[new_pos]
 			elif m.isupper():
-				letters += letters[new_pos].upper()
-	return m
+				cipher_text += letters[new_pos].upper()
+	
+	return cipher_text
