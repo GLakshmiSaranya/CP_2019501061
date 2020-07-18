@@ -8,8 +8,9 @@ def fun_nth_happy_prime(n):
 	
 	while count <= n:
 		res += 1
-		if ishappynumber(res) and isPrime(res):
-			count += 1
+		if ishappynumber(res):
+			if isPrime(res):
+				count += 1
 	return res
 
 def ishappynumber(n):
