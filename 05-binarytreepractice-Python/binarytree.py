@@ -48,4 +48,10 @@ class BinaryTree(object):
         """Helper method - use this to create a 
         recursive print solution."""
         # Your code goes here
+        if start:
+            s = str(start.value)
+            print(s + " ")
+
+            self.preorder_print(start.right)
+            self.preorder_print(start.left)
         pass
