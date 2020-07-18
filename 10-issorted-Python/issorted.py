@@ -7,7 +7,24 @@
 
 def issorted(a):
 	# your code goes here
-	b = a
+	# b = a
+	
+	# print("List of A")
+	# for i in a:
+	# 	print(i)
+	
+	# print("List of B")
+	# for i in b:
+	# 	print(i)
+	
+	b = a.copy()
+	# print("List of A")
+	# for i in a:
+	# 	print(i)
+	
+	# print("List of B")
+	# for i in b:
+	# 	print(i)
 	a.sort()
 
 	if a == b:
