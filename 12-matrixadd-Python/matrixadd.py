@@ -25,13 +25,11 @@ def matrixadd(L, M):
 
 	if r1 == r2 and c1 == c2:
 		N = [] 
-
 		for i in range(r1):
 			for j in range(c1):
 				N[i][j] = L[i][j] + M[i][j]
 		# for i in N:
 		# 	print(i)
 		return N
-	
 	return None
 	pass
