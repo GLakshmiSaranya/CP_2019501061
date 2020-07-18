@@ -5,9 +5,13 @@ def quicksort(array):
 	# Your code goes here
 	low = 0
 	high = len(array) - 1
-
+	quick_sort(array, low, high)
+	return array
+	
+def quick_sort(array, low, high):	
 	if low < high:
 		pivot = partition(array, low, high)
+		
 		quicksort(array, low, pivot - 1)
 		quicksort(array, pivot + 1, high)
 	pass
