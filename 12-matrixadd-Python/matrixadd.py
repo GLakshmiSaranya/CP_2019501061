@@ -20,12 +20,12 @@ def matrixadd(L, M):
 	r1 = len(L)
 	r2 = len(M)
 
-	c1 = len(L[0])
-	c2 = len(M[0])
-
-	if r1 == r2 and c1 == c2:
-		N = [] 
+	if r1 == r2:
 		for i in range(r1):
+			if len(L[i]) != len(M[i]):
+				return
+		N = [] 
+		for i in range(len(L[0])):
 			for j in range(c1):
 				N[i][j] = L[i][j] + M[i][j]
 		
