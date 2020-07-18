@@ -10,12 +10,11 @@
 # assert(nthHappyNumber(6) == 28)
 # assert(nthHappyNumber(7) == 31)
 
-
 def fun_nth_happy_number(n):
 	res = 0 
 	count = 0
 	
-	while count <= n:
+	while count < n:
 		res += 1
 		if (ishappynumber(res)):
 			count += 1
