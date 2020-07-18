@@ -29,5 +29,4 @@ def fun_applycaesarcipher(msg, shift):
 				cipher_text += letters[new_pos]
 			elif m.isupper():
 				cipher_text += letters[new_pos].upper()
-	
 	return cipher_text
