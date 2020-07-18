@@ -24,7 +24,7 @@ class BinaryTree(object):
         as they are visited in
         a pre-order traversal."""
         # Your code goes here
-        self.preorder_print(self.root)
+        preorder_print(self.root)
         pass
 
     def preorder_search(self, start, find_val):
