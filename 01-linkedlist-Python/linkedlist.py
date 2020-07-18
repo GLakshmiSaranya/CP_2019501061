@@ -70,5 +70,6 @@ class LinkedList(object):
         temp = self.head
         if temp.value == value:
             self.head = temp.next
+            temp = None
             return
         pass
