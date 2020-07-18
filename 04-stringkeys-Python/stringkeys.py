@@ -11,7 +11,7 @@ class HashTable(object):
         the table."""
         # Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter 
         # Your code goes here
-        self.table.append(atring)
+        self.table.append(string)
         pass
         
     def lookup(self, string):
@@ -20,7 +20,7 @@ class HashTable(object):
         Return -1 otherwise."""
         # Your code goes here
         if string in self.table:
-            hash_val = calculate_hash_value(string)
+            hash_val = self.calculate_hash_value(string)
             return hash_val
         return -1
         pass
