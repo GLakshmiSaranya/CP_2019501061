@@ -19,8 +19,8 @@ class LinkedList(object):
         
     def append(self, new_element):
         # Your code goes here
-        temp = self.head
         if self.head:
+            temp = self.head
             while temp.next:
                 temp = temp.next
             temp.next = new_element
@@ -33,16 +33,18 @@ class LinkedList(object):
         Assume the first position is "1".
         Return "None" if position is not in the list."""
         # Your code goes here
-        temp = self.head
         # if position == 1:
         #     return temp
-        
-        for i in range(1, position):
-            if temp.value == None:
-                return None
-            else:
-                temp = temp.next
-        return temp
+        temp = self.head
+        pos = 1
+
+        while temp != None:
+            if position == pos:
+                return temp
+
+            pos += 1
+            temp = temp.next
+        return None
         pass
     
     def insert(self, new_element, position):
@@ -69,10 +71,4 @@ class LinkedList(object):
         if temp.value == value:
             self.head = temp.next
             return
-        while temp.next:
-            if temp.next.value == value:
-                temp.next = temp.next.next
-                return
-            else:
-                temp = temp.next
         pass
