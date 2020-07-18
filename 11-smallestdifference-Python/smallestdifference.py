@@ -14,7 +14,7 @@ def smallestdifference(a):
 	a.sort()
 	diff = 0
 
-	for i in range(0, l):
+	for i in range(1, l - 1):
 		temp = abs(a[i] - a[i + 1])
 		if temp < diff:
 			diff = temp
