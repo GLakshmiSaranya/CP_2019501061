@@ -25,8 +25,8 @@ def matrixadd(L, M):
 			if len(L[i]) != len(M[i]):
 				return
 		N = [] 
-		for i in range(len(L[0])):
-			for j in range(c1):
+		for i in range(r1):
+			for j in range(len(L[0])):
 				N[i][j] = L[i][j] + M[i][j]
 		
 		# for i in N:
