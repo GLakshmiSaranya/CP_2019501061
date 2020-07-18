@@ -5,7 +5,9 @@ def quicksort(array):
 	# Your code goes here
 	low = 0
 	high = len(array) - 1
+	
 	quick_sort(array, low, high)
+	
 	return array
 	
 def quick_sort(array, low, high):	
