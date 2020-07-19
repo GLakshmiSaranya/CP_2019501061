@@ -9,7 +9,7 @@ def findzerowithbisection(x, epsilon):
 	# don't change these values
 	# epsilon
 	# your code starts here
-	low = 0.0
+	low = 1
 	high = x
 	guess = (low + high) / 2
 
