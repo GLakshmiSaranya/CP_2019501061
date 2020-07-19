@@ -19,12 +19,16 @@ def findzerowithbisection(x, epsilon):
 
 		if diff <= epsilon:
 			break
-		if g_sq > x:
-			high = guess
+		
 		if g_sq < x:
 			low = guess
+			
+		if g_sq > x:
+			high = guess
+		
 		else:
 			return guess
-		guess == (low + high) / 2
+		
+		guess = (low + high) / 2
 
 	return guess
