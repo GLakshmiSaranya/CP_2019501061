@@ -7,4 +7,20 @@
 
 def isrotation(x, y):
 	# Your code goes here
+	str_x = str(x)
+	str_y = str(y)
+
+	len_x = len(str_x)
+	len_y = len(str_y)
+
+	if len_x != len_y:
+		return False
+
+	for i in range(0, len_x):
+		if str_x[i: ] + str_x[ :i] == str_y:
+			return True
+		temp = len1 - i
+		if str_x[temp : ] + str_x[ : temp] == str_y:
+			return True
+	return False
 	pass
