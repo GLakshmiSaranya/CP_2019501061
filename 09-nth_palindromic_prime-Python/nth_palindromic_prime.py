@@ -15,12 +15,10 @@ def fun_nth_palindromic_prime(n):
 		if count == n:
 			return res
 		res += 1
-				
-	return 0
 
 def is_palindrome(n):
 	str_n = str(n)
-	if str_n == str_n.reverse[ : : -1]:
+	if str_n == str_n[ : : -1]:
 		return True
 	return False
 
