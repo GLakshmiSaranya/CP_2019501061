@@ -21,7 +21,6 @@ def is_palindrome(n):
 		return True
 	return False
 
-
 def is_prime(n):
 	if n == 1:
 		return False
