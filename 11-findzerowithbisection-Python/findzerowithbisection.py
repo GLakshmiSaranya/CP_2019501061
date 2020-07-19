@@ -22,8 +22,8 @@ def findzerowithbisection(x, epsilon):
 		
 		if g_sq < x:
 			low = guess
-			
-		if g_sq > x:
+
+		elif g_sq > x:
 			high = guess
 		
 		else:
