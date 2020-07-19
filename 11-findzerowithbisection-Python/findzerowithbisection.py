@@ -20,7 +20,7 @@ def findzerowithbisection(x, epsilon):
 
 		if diff <= epsilon:
 			break
-		if x > g_sq:
+		if x >= g_sq:
 			low = guess
 		else:
 			high = guess
