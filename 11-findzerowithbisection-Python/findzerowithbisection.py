@@ -17,7 +17,7 @@ def findzerowithbisection(x, epsilon):
 		g_sq = guess ** 2
 		diff = abs((g_sq) - x)
 
-		if diff <= epsilon:
+		if diff < epsilon:
 			break
 		
 		if g_sq < x:
