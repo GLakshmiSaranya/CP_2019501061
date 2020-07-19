@@ -8,8 +8,8 @@ def fun_nth_additive_prime(n):
 	res = 2
 
 	while n <= count:
-		sum = sum_of_digits(n)
-		if is_prime(n) and is_prime(sum):
+		sum = sum_of_digits(res)
+		if is_prime(res) and is_prime(sum):
 			count += 1
 		if count == n:
 			return res
