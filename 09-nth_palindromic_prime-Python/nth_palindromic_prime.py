@@ -8,9 +8,8 @@ def fun_nth_palindromic_prime(n):
 	res = 2
 
 	while count <= n:
-		if is_palindrome(n):
-			if is_prime(n):
-				count += 1
+		if is_palindrome(n) and is_prime(n):
+			count += 1
 
 		if count == n:
 			return res
