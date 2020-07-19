@@ -9,11 +9,12 @@ def findzerowithbisection(x, epsilon):
 	# don't change these values
 	# epsilon
 	# your code starts here
+	
 	low = 1
 	high = x
 	guess = (low + high) / 2
 
-	while abs((guess ** 2) - x) > epsilon:
+	while (abs((guess ** 2) - x) > epsilon):
 		if guess ** 2 < x:
 			low = guess
 
