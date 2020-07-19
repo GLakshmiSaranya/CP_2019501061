@@ -9,5 +9,3 @@ import pytest
 ])
 def test_fun_nth_palindromic_prime(a, result):
     assert fun_nth_palindromic_prime(a) == result
-
-
