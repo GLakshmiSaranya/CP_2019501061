@@ -19,7 +19,7 @@ def isrotation(x, y):
 	for i in range(0, len_x):
 		if str_x[i: ] + str_x[ :i] == str_y:
 			return True
-		temp = len1 - i
+		temp = len_x - i
 		if str_x[temp : ] + str_x[ : temp] == str_y:
 			return True
 	return False
