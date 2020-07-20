@@ -6,7 +6,9 @@ import operator
 def fun_kth_occurrences(s, n):
 	dic = {}
 	freq_count = []
-	for i in s:
+	S = set(s)
+	
+	for i in S:
 		count = s.count(i)
 		freq_count.append(count)
 
