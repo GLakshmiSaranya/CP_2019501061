@@ -16,7 +16,7 @@ def lookandsay(a):
 	l = len(a)
 
 	while i < l:
-		while a[m] == a[n] and n < l:
+		while n < l and a[m] == a[n]:
 			n += 1
 		
 		value = a[m]
