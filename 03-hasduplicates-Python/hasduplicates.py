@@ -5,14 +5,12 @@
 
 def hasduplicates(L):
 	# Your code goes here
-	# for i in L:
-	# 	for j in i:
-	# 		if L.count(j) > 1:
-	# 			return True
-	# return False
-
-	L1 = set(L)
-	if len(L) == len(L1):
-		return False
-	return True
+	L1 = []
+	for i in L:
+		for j in i:
+			if j not in L1:
+				L1.append(j)
+			else:
+				return True
+	return False
 	pass
