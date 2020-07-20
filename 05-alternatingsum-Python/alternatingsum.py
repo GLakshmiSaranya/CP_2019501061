@@ -4,7 +4,7 @@
 
 def fun_alternatingsum(a):
 	alternate_sum = 0
-	count = 0
+	count = 1
 
 	for i in a:
 		if count % 2 == 0:
