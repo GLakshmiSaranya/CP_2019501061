@@ -5,4 +5,9 @@
 
 def hasduplicates(L):
 	# Your code goes here
+	for i in L:
+		for j in i:
+			if L.count(j) > 1:
+				return True
+	return False
 	pass
