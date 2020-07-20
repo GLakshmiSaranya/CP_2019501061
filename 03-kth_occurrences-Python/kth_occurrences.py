@@ -9,6 +9,7 @@ def fun_kth_occurrences(s, n):
 			dic[i] += 1
 			
 			if dic[i] == n:
+				print(i)
 				return i
 		
 		else:
