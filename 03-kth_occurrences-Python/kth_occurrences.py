@@ -3,7 +3,13 @@
 # can account as K-th the most frequent character then, print any one of them.
 
 def fun_kth_occurrences(s, n):
+	dic = {}
 	for i in s:
-		if s.count(i) == n:
-			return i
-	return ''
+		if i in dic:
+			dic[i] += 1
+			
+			if dic[i] == n:
+				return i
+		
+		else:
+			dic[i] = 1
