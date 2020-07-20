@@ -21,7 +21,7 @@ def lookandsay(a):
 		
 		value = a[m]
 		count = n - m
-		res.append(count, value)
+		res.append((count, value))
 		
 		i = n
 		m = n
