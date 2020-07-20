@@ -30,9 +30,7 @@ def fun_wordwrap(s, n):
 			res += s[i : ] + '\n'
 			break
 
-	for i in res:
-		if i == " ":
-			i = "-"
+	res.replace(" ", "-")
 
 	res.strip('\n')
 	return res
