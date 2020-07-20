@@ -11,5 +11,8 @@ def canqueenattack(qR, qC, oR, oC):
 	if qC == oC:
 		return True
 
+	if abs(qR - qC) == abs(oR - oC):
+		return True
+	
 	return False
 	pass
