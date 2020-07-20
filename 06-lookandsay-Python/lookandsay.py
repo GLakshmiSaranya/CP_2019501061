@@ -26,5 +26,5 @@ def lookandsay(a):
 		i = n
 		m = n
 
-		return res
+	return res
 	pass
