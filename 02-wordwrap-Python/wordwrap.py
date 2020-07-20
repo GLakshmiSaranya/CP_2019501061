@@ -31,4 +31,6 @@ def fun_wordwrap(s, n):
 				res += s[j]
 		res += '\n'
 	res.replace('\n','').strip()
+
+	print(res)
 	return res
