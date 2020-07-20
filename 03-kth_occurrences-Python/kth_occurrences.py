@@ -4,15 +4,15 @@
 import operator
 
 def fun_kth_occurrences(s, n):
-	dic = {}
+	dic = dict()
 	for i in s:
 		if i not in dic:
-			key = i
-			value = s.count(i)
+			# key = i
+			# value = s.count(i)
 			# print(s.count(i))
 			dic[i] = s.count(i)
 	
-	sorted_ddict(sorted(dict.items(), key = operator.itemgetter(1), reverse = True))
+	# sorted_dict = sorted(dict.items(), key = operator.itemgetter(1), reverse = True)
 
 	for i in dic:
 		if dic[i] == n:
