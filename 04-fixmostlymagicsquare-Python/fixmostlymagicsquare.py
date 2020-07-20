@@ -5,7 +5,7 @@
 # L, return a new list M such that M is the same as L, only with exactly one value changed, and M is a mostly magic 
 # square.
 
-
 def fixmostlymagicsquare(L):
 	pass
 	# Your code goes here
+	
