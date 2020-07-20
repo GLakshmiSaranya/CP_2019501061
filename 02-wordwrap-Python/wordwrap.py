@@ -34,5 +34,5 @@ def fun_wordwrap(s, n):
 
 	print(res)
 
-	print(" h")
+	print("h")
 	return res
