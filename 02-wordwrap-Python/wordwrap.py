@@ -33,4 +33,7 @@ def fun_wordwrap(s, n):
 	res.rstrip('\n')
 
 	print(res)
+
+	print(" h")
+	print(res[:-1])
 	return res
