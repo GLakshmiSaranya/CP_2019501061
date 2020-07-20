@@ -8,7 +8,26 @@
 # Note: your function may not just create a copy of L and call the destructive version of this function (below) on 
 # that copy and return it. Instead, you must directly construct the result here.
 
-
 def shortenlongruns(L, k):
 	# Your code goes here
+	l = len(L)
+	count = 1
+	i = 0
+
+	while i < l -1:
+		if L[i] == L[i + 1]:
+			count += 1
+
+			if count == k:
+				L.pop(i)
+				
+				count = 1
+				l -= 1
+				i -= 1
+
+		else:
+			count = 1
+		i += 1
+
+	return L 
 	pass
