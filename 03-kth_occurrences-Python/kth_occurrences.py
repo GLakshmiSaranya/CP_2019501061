@@ -8,7 +8,7 @@ def fun_kth_occurrences(s, n):
 		if i not in dic:
 			# key = i
 			# value = s.count(i)
-			print(s.count(i))
+			# print(s.count(i))
 			dic[i] = s.count(i)
 	
 	for i in dic:
