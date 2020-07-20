@@ -14,7 +14,5 @@ def fun_kth_occurrences(s, n):
 	
 	sorted_dic = dict(sorted(dic.items(), key = operator.itemgetter(1), reverse = True))
 
-	for i in sorted_dic:
-		if sorted_dic[i] == n:
-			print(i)
-			return i
+	print(sorted_dic[n])
+	return sorted_dic[n]
