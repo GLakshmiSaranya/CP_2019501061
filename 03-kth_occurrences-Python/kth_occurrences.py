@@ -1,6 +1,7 @@
 # Given a string str and an integer K, the task is to find the K-th most 
 # frequent character in the string. If there are multiple characters that 
 # can account as K-th the most frequent character then, print any one of them.
+import operator
 
 def fun_kth_occurrences(s, n):
 	dic = {}
@@ -11,7 +12,7 @@ def fun_kth_occurrences(s, n):
 			# print(s.count(i))
 			dic[i] = s.count(i)
 	
-	dict(sorted(dict.items(), key = operator.itemgetter(1), reverse = True))
+	sorted_dic = dict(sorted(dic.items(), key = operator.itemgetter(1), reverse = True))
 
 	for i in dic:
 		if dic[i] == n:
