@@ -12,7 +12,7 @@ def fun_getaverage(s):
 
 	for i in arr:
 		if i.isdigit():
-			int_arr.append(i)
+			int_arr.append(int(i))
 
 	l = len(int_arr)
 	avg = 0.0
