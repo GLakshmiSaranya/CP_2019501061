@@ -13,11 +13,10 @@ def fun_kth_occurrences(s, n):
 			# dic[i] = s.count(i)
 
 			dic[i] += 1
-			if dic[i] == n:
-				return i
-
 		else:
 			dic[i] = 1
+		if dic[i] == n:
+				return i
 	
 	# sorted_dict = sorted(dict.items(), key = operator.itemgetter(1), reverse = True)
 
