@@ -29,8 +29,8 @@ def fun_wordwrap(s, n):
 				res += '-'
 			else:
 				res += s[j]
-		res += "\n"
-	res.rstrip("\n")
+		res += '\n'
+	res.rstrip('\n')
 
 	# print(res)
 	return res
