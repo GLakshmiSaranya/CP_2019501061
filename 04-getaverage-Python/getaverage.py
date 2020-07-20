@@ -15,14 +15,13 @@ def fun_getaverage(s):
 			int_arr.append(i)
 
 	l = len(int_arr)
-	arr_sum = 0
-
-	for i in int_arr:
-		arr_sum += i
-
 	avg = 0.0
 	if l == 0:
 		return avg
+
+	arr_sum = 0.0
+	for i in int_arr:
+		arr_sum += i
 
 	avg = arr_sum / l
 	return avg
