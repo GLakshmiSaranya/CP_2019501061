@@ -3,7 +3,7 @@
 
 def fun_hasnoprimes(l):
 	for i in range(len(l)):
-		if isPrime(i) == False:
+		if isPrime(i) == True:
 			return False
 	return True
 
