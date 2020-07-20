@@ -5,22 +5,15 @@ import operator
 
 def fun_kth_occurrences(s, n):
 	dic = {}
+	freq_count = []
 	for i in s:
-		if i in dic:
-			# key = i
-			# value = s.count(i)
-			# print(s.count(i))
-			# dic[i] = s.count(i)
+		count = s.count(i)
+		freq_count.append(count)
 
-			dic[i] += 1
+		if count in dic.keys():
+			dic[count].append(i)
 		else:
-			dic[i] = 1
-		if dic[i] == n:
-				return i
-	
-	# sorted_dict = sorted(dict.items(), key = operator.itemgetter(1), reverse = True)
+			dic[count] = [i]
 
-	# for i in dic:
-	# 	if dic[i] == n:
-	# 		print(i)
-	# 		return i
+	freq_count.sort(reverse = True)
+	return dic[freq_count[n - 1]][0]
