@@ -9,8 +9,8 @@ def fun_alternatingsum(a):
 
 	for i in a:
 		if count % 2 == 0:
-			alternate_sum -= j
+			alternate_sum -= i
 		else:
-			alternate_sum += j
+			alternate_sum += i
 		count += 1
 	return alternate_sum
