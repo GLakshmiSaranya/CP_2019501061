@@ -9,4 +9,22 @@
 
 def lookandsay(a):
 	# Your code goes here
+	res = []
+	m = 0
+	n = 0
+	i = 0
+	l = len(a)
+
+	while i < l:
+		while a[m] == a[n] and n < l:
+			n += 1
+		
+		value = a[m]
+		count = n - m
+		res.append(count, value)
+		
+		i = n
+		m = n
+
+		return res
 	pass
