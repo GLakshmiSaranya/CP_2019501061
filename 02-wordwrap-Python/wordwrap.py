@@ -23,14 +23,16 @@ def fun_wordwrap(s, n):
 	i = 0
 
 	while i < l:
-		res += s[i : i + n] + "\n"
+		res += s[i : i + n] + '\n'
 		i += n
 
 		if l - i < n:
-			res += s[i : ] + "\n"
+			res += s[i : ] + '\n'
 			break
 
-	res.replace(" ", "-")
+	for i in res:
+		if i == " ":
+			i = "-"
 
-	res.strip("\n")
+	res.strip('\n')
 	return res
