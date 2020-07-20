@@ -4,17 +4,24 @@
 import operator
 
 def fun_kth_occurrences(s, n):
-	dic = dict()
+	dic = {}
 	for i in s:
-		if i not in dic:
+		if i in dic:
 			# key = i
 			# value = s.count(i)
 			# print(s.count(i))
-			dic[i] = s.count(i)
+			# dic[i] = s.count(i)
+
+			dic[i] += 1
+			if dic[i] == n:
+				return i
+
+		else:
+			dic[i] = 1
 	
 	# sorted_dict = sorted(dict.items(), key = operator.itemgetter(1), reverse = True)
 
-	for i in dic:
-		if dic[i] == n:
-			print(i)
-			return i
+	# for i in dic:
+	# 	if dic[i] == n:
+	# 		print(i)
+	# 		return i
