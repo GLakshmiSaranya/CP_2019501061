@@ -2,9 +2,10 @@
 # and returns True if L does not contain any primes, and False otherwise.
 
 def fun_hasnoprimes(l):
-	for i in range(len(l)):
-		if isPrime(i) == True:
-			return False
+	for i in l:
+		for j in i:
+			if isPrime(j):
+				return False
 	return True
 
 def isPrime(n):
