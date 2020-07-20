@@ -12,5 +12,5 @@ def fun_kth_occurrences(s, n):
 			dic[i] = s.count(i)
 	
 	for i in dic:
-		if dic[i] == value:
+		if dic[i] == n:
 			return i
