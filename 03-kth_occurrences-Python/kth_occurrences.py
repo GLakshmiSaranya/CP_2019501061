@@ -7,6 +7,6 @@ def fun_kth_occurrences(s, n):
 	for i in s:
 		if i not in dic:
 			dic.update({i, s.count(i)})
-		
-		else:
-			dic[i] = 1
+	for key, value in dic:
+		if value == n:
+			return key
