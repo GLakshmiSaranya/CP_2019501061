@@ -9,6 +9,7 @@ def fixmostlymagicsquare(L):
 	pass
 	# Your code goes here
 	l = len(L)
+	l1 = len(L[0])
 	rows_sum = []
 	cols_sum = []
 	for i in L:
@@ -18,10 +19,9 @@ def fixmostlymagicsquare(L):
 	for i in rows_sum:
 		print(i)
 
-	s = 0
 	for i in range(l):
-		for j in range(l):
-			s += L[i][j]
+		for j in L:
+			s = sum(j[i])
 		cols_sum.append(s)
 
 	print("Col Sum elements")
