@@ -17,7 +17,9 @@ def alternating_sum(list_L, res, indx):
 		return res
 	if indx % 2 == 0:
 		res += list_L[indx]
+		indx += 1
 	else:
 		res -= list_L[indx]
+		indx += 1
 
-	return alternating_sum(list_L, res, res)
+	return alternating_sum(list_L, res, indx)
