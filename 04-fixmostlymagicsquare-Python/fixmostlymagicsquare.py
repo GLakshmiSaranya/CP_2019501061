@@ -8,4 +8,36 @@
 def fixmostlymagicsquare(L):
 	pass
 	# Your code goes here
+	l = len(L)
+	rows_sum = []
+	cols_sum = []
+	for i in L:
+		rows_sum.append(sum(i))
 	
+	print("Row Sum elements")
+	for i in rows_sum:
+		print(i)
+
+	s = 0
+	for i in range(l):
+		for j in range(l):
+			s += L[i][j]
+		cols_sum.append(s)
+
+	print("Col Sum elements")
+	for i in cols_sum:
+		print(i)
+
+	for i in rows_sum:
+		if rows_sum.count(i) > 1:
+			value = i
+		elif rows_sum.count(i) == 1:
+			pos = i
+
+	row_index = rows_sum.index(pos)
+	col_index = cols_sum.index(pos)
+	change_value = pos - value
+
+	L[row_index][col_index] -= change_value
+	
+	return L
