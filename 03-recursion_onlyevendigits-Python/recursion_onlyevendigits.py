@@ -15,12 +15,13 @@ def fun_recursion_onlyevendigits(L):
 		return L
 	num = L[0]
 	pos = 0
+	rem = 0
 	while num > 0:
 		t = num % 10
 		if t % 2 == 0:
-			num += t * (pos ** 10)
+			rem += t * (pos ** 10)
 			pos += 1
 		num //= 10
-	L[0] = num
+	L[0] = rem
 	fun_recursion_onlyevendigits(L[1:])
 	return fun_recursion_onlyevendigits(L[1:])
