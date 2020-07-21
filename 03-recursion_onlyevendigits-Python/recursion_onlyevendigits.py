@@ -13,6 +13,7 @@ def fun_recursion_onlyevendigits(L):
 
 	if l == 0:
 		return L
+	
 	num = L[0]
 	pos = 0
 	rem = 0
@@ -23,5 +24,5 @@ def fun_recursion_onlyevendigits(L):
 			pos += 1
 		num //= 10
 	L[0] = rem
-	fun_recursion_onlyevendigits(L[1:])
+	# fun_recursion_onlyevendigits(L[1:])
 	return fun_recursion_onlyevendigits(L[1:])
