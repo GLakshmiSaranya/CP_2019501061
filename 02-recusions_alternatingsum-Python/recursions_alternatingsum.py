@@ -5,8 +5,19 @@
 
 def fun_recursions_alternatingsum(L):
 	l = len(L)
+	res = 0
+	indx = 0
 
-	if l == 0:
+	if len(L) == 0:
 		return 0
+	return alternating_sum(L, res, indx)
+
+def alternating_sum(list_L, res, indx):
+	if indx == len(list_L):
+		return res
+	if indx % 2 == 0:
+		res += list_L[indx]
 	else:
-		return L[0] + fun_recursions_alternatingsum(L[1 : ])
+		res -= list_L[indx]
+
+	return alternating_sum(list_L, res, res)
