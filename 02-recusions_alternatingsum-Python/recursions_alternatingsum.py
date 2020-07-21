@@ -9,5 +9,5 @@ def fun_recursions_alternatingsum(L):
 	if l == 0:
 		return 0
 	else:
-		return L[0] +fun_recursions_alternatingsum(L[1 : ])
+		return L[0] + fun_recursions_alternatingsum(L[1 : ])
 	return 0
