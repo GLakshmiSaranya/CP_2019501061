@@ -19,7 +19,7 @@ def fixmostlymagicsquare(L):
 	for i in rows_sum:
 		print(i)
 
-	for i in range(l):
+	for i in range(l1):
 		for j in L:
 			s = sum(j[i])
 		cols_sum.append(s)
