@@ -14,9 +14,6 @@ def fun_recursion_onlyevendigits(L):
 	if l == 0:
 		return L
 	num = L[0]
-	l = len(num)
-	if l == 0:
-		return 0
 	pos = 0
 	while num > 0:
 		t = num % 10
@@ -25,4 +22,5 @@ def fun_recursion_onlyevendigits(L):
 			pos += 1
 		num //= 10
 	L[0] = num
+	fun_recursion_onlyevendigits(L[1:])
 	return fun_recursion_onlyevendigits(L[1:])
