@@ -5,4 +5,19 @@
 
 def recursion_powersof3ton(n):
 	# Your code goes here
+	global power_arr
+	if n < 1:
+		return None
+	power_arr = []
+	
+	if divisible_by_3(n):
+		power_arr.append(n)
+	return recursion_powersof3ton(round(n))
 	pass
+
+def divisible_by_3(n):
+	if n == 1 or n == 3:
+		return True
+	elif n % 3 > 0:
+		return False
+	return divisible_by_3(n / 3)
