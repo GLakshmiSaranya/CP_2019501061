@@ -21,7 +21,7 @@ def fun_recursion_onlyevendigits(L):
 	return even_arr
 
 def only_even_digits(num):
-	global even_num
+	even_num = 0
 	if num > 0:
 		rem = num % 10
 		if rem % 2 == 0:
