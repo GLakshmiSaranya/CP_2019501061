@@ -41,9 +41,9 @@ def only_even_digits(num):
 def even_rev(num):
 	rev = 0
 
-	while val > 0:
-		rem = val % 10
+	while num > 0:
+		rem = num % 10
 		rev = rem + rev * 10
-		val //= 10
+		num //= 10
 	print("rev", rev)
 	return rev
