@@ -9,14 +9,15 @@
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
 even_arr = []
+global even_num
 def fun_recursion_onlyevendigits(L):
 	l = len(L)
 
 	if l == 0:
 		return even_arr
 	
-	# even_num = 0
-	val = only_even_digits(L.pop(0), 0)
+	even_num = 0
+	val = only_even_digits(L.pop(0))
 	print("val", val)
 	rev = 0
 
@@ -28,8 +29,8 @@ def fun_recursion_onlyevendigits(L):
 	even_arr.append(rev)
 	return fun_recursion_onlyevendigits(L)
 
-def only_even_digits(num, even_num):
-	# global even_num
+def only_even_digits(num):
+	global even_num
 
 	if num > 0:
 		rem = num % 10
@@ -37,7 +38,7 @@ def only_even_digits(num, even_num):
 		if rem % 2 == 0:
 			even_num = rem + even_num * 10
 			print("Inside", even_num)
-		only_even_digits(num // 10, even_num)
+		only_even_digits(num // 10)
 	
-	# print("outside ", even_num)
+	print("outside ", even_num)
 	return even_num
