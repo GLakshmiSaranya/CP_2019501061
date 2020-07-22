@@ -24,7 +24,7 @@ def fun_recursion_onlyevendigits(L):
 		rem = val % 10
 		rev *= 10 + rem
 		val //= 10
-	prit("rev", rev)
+	print("rev", rev)
 	even_arr.append(rev)
 	return fun_recursion_onlyevendigits(L)
 
