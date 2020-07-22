@@ -9,10 +9,10 @@
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
 even_arr = []
-global even_num
+
 def fun_recursion_onlyevendigits(L):
 	l = len(L)
-
+	global even_num
 	if l == 0:
 		return even_arr
 	
