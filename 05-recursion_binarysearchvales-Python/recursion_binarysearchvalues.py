@@ -17,10 +17,10 @@
 #     assert(binarySearchValues(L, v) == [(2,'f'), (0,'a'), (1,'c')])
 # Hint: Do not slice the list L, but rather adjust the indexes into L. 
 
+bsv_arr = []
 def recursion_binarysearchvalues(L, v):
 	# Your codes goes here
-	global bsv_arr
-	bsv_arr = []
+	# bsv_arr = []
 	# bsv(L, v, 0, len(L) - 1)
 	return bsv(L, v, 0, len(L) - 1)
 	pass
