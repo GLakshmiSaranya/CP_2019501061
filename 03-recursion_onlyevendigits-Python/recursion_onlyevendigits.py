@@ -35,5 +35,5 @@ def only_even_digits(num, even_num):
 			even_num *= 10 + rem 
 		only_even_digits(num // 10, even_num)
 	
-	print(even_num)
+	# print(even_num)
 	return even_num
