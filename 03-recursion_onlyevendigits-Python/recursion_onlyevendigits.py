@@ -16,8 +16,10 @@ def fun_recursion_onlyevendigits(L):
 		return even_arr
 
 	global even_num
+	global pos
 	for i in L:
 		even_num = 0
+		pos = 0
 		even_arr.append(only_even_digits(i))
 	
 	return even_arr
