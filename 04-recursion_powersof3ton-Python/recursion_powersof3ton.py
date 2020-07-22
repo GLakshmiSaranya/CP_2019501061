@@ -3,14 +3,15 @@
 # positive powers of 3 up to and including n. As an example, powersOf3ToN(10.5) returns [1, 3, 9]. If no such powers 
 # of 3 exist, you should return the empty list. You may not use loops/iteration in this problem. 
 
+power_arr = []
+
 def recursion_powersof3ton(n):
 	# Your code goes here
-	global power_arr
-	power_arr = []
 	if n < 1:
 		if len(power_arr) == 0:
 			return None
 		arr = power_arr.sort()
+		power_arr = []
 		return arr
 
 	if divisible_by_3(n):
