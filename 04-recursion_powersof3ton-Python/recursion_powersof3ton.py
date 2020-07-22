@@ -6,10 +6,13 @@
 def recursion_powersof3ton(n):
 	# Your code goes here
 	global power_arr
-	if n < 1:
-		return None
 	power_arr = []
-	
+	if n < 1:
+		if len(power_arr) == 0:
+			return None
+		arr = power_arr.sort()
+		return arr
+
 	if divisible_by_3(n):
 		power_arr.append(n)
 	return recursion_powersof3ton(round(n))
