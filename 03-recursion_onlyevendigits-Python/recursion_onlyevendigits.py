@@ -32,7 +32,6 @@ def only_even_digits(num):
 			even_num = rem + even_num * 10
 			# print("Inside", even_num)
 		only_even_digits(num // 10)
-	
 	# print("outside ", even_num)
 	return even_num
 
