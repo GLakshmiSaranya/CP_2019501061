@@ -26,8 +26,9 @@ def only_even_digits(num, even_num):
 		rem = num % 10
 		if rem % 2 == 0:
 			even_num += rem * (pos ** 10)
+			pos += 1
 		print(even_num)
-		only_even_digits(num // 10, even_num)
+	only_even_digits(num // 10, even_num)
 	
 	print("outside ", even_num)
 	return even_num
