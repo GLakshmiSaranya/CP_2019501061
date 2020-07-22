@@ -26,6 +26,7 @@ def recursion_secondlargest(L):
 
 def get_second_largest(L, m1, m2):
 	global pos
+	
 	if pos < len(L):
 		if L[pos] == m1:
 			t= m1
