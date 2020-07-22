@@ -31,8 +31,8 @@ def bsv(L, v, low, high):
 	bsv_arr.append(mid, L[mid])
 
 	if low < high:
-		if val < L[mid]:
+		if v < L[mid]:
 			return bsv(L, v, low, mid - 1)
-		if val > L[mid]:
+		if v > L[mid]:
 			return bsv(L, v, mid + 1, high)
 		return bsv_arr
