@@ -39,7 +39,7 @@ def bsv(L, v, low, high):
 
 	if v < L[mid]:
 		high = mid - 1
-		bsv(L, v, low, high)
 	else:
 		low = mid + 1
-		bsv(L, v, low, high)
+	
+	bsv(L, v, low, high)
