@@ -15,7 +15,7 @@ def recursion_powersof3ton(n):
 	pass
 
 def divisible_by_3(num, power_arr, n):
-	if num < n:
+	if num <= n:
 		return power_arr
 	
 	val = 3 ** n
