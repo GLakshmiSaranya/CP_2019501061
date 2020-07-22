@@ -24,7 +24,7 @@ def recursion_secondlargest(L):
 def get_second_largest(L, i, m1, m2):
 	if i == len(L):
 		return m2
-	if i == 0:
+	if i == 0 and L[i] < 0:
 		m1 = L[i] - 1
 	else:
 		if L[i] >= m1:
