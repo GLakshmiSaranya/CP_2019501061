@@ -26,7 +26,7 @@ def get_second_largest(L, n, m1, m2):
 		return m2
 
 
-	if i == 0:
+	if n == 0:
 		m1 = L[i] - 1
 	if L[i] >= 0:
 		if L[i] >= m1:
@@ -38,4 +38,4 @@ def get_second_largest(L, n, m1, m2):
 			m2 = L[i]
 	
 	i += 1
-	get_second_largest(L, i)
+	get_second_largest(L, n)
