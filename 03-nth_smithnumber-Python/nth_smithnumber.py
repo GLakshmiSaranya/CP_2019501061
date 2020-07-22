@@ -7,6 +7,37 @@
 # so fun_nthsmithnumber(0) should return 4
 # so fun_nthsmithnumber(1) should return 22
 
-
 def fun_nth_smithnumber(n):
-    return 1
+    if n == 0:
+        return 4
+
+    count = 0
+    while count <= n:
+        if is_smith_number(i):
+            count += 1
+        i += 1
+    return i
+
+def is_smith_number(n):
+    return digit_sum(n) == sum_prime_fact(n)
+
+def digit_sum(n):
+    res = 0
+
+    while n > 0:
+        rem = n % 10
+        res += rem
+        n //= 10
+    return res
+
+def sum_prime_fact(n):
+    i = 2
+    res = 0
+
+    while n > 1:
+        if n % i == 0:
+            sum += digit_sum(i)
+            n //= i
+        else:
+            i += 1
+    return res
