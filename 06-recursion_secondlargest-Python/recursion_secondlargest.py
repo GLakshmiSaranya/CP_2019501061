@@ -18,23 +18,24 @@ def recursion_secondlargest(L):
 	l = len(L)
 	if l < 2:
 		return None
-	global m1, m2
-	m1 = L[0]
-	m2 = 0
-	get_second_largest(L, 0)
-	return m2
+	return get_second_largest(L, 0, 0, 0)
 	pass
 
-def get_second_largest(L, n):
-	global i
-	i = 0
+def get_second_largest(L, n, m1, m2):
+	if n == len(L):
+		return m2
 
-	if i < len(L):
-		if L[i] > m1:
-			m2 = m1
+
+	if i == 0:
+		m1 = L[i] - 1
+	if L[i] >= 0:
+		if L[i] >= m1:
+			temp = m1
 			m1 = L[i]
-	
+			m2 = temp
+			
 		elif L[i] > m2:
 			m2 = L[i]
-			i += 1
+	
+	i += 1
 	get_second_largest(L, i)
