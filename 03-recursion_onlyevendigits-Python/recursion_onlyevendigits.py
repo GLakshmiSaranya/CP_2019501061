@@ -28,6 +28,7 @@ def only_even_digits(num):
 			even_num *= rem + 10
 		only_even_digits(num // 10)
 
+	n = 0
 	while even_num > 0:
 		rem = even_num % 10
 		n *= rem + 10
