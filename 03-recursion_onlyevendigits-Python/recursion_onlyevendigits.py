@@ -8,15 +8,17 @@
 # Also the function returns the empty list if the original list is empty. 
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
+even_arr = []
 def fun_recursion_onlyevendigits(L): 
 	l = len(L)
 
 	if l == 0:
-		return L
+		return even_arr
 	
 	num = L[0]
 	if num == 0:
-		return fun_recursion_onlyevendigits(L[1:])
+		even_arr.append(num)
+		return fun_recursion_onlyevendigits(L)
 	pos = 0
 	rem = 0
 	while num > 0:
@@ -25,6 +27,6 @@ def fun_recursion_onlyevendigits(L):
 			rem += t * (pos ** 10)
 			pos += 1
 		num //= 10
-	L[0] = rem
+	even_arr.append(rem)
 	# fun_recursion_onlyevendigits(L[1:])
-	return fun_recursion_onlyevendigits(L[1:])
+	return fun_recursion_onlyevendigits(L)
