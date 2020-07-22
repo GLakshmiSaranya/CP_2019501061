@@ -19,7 +19,7 @@ def divisible_by_3(num, power_arr, n):
 		return power_arr
 	
 	val = 3 ** n
-	if val <= num:
+	if val < num:
 		power_arr.append(val)
 	n += 1
 	return divisible_by_3(num, power_arr, n)
