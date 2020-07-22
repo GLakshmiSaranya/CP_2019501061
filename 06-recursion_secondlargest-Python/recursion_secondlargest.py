@@ -37,4 +37,4 @@ def get_second_largest(L, n, m1, m2):
 		m2 = temp
 
 	i += 1
-	m2 = get_second_largest(L, m1 - 1, m2)
+	m2 = get_second_largest(L, n, m1 - 1, m2)
