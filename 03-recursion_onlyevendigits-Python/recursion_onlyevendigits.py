@@ -16,6 +16,7 @@ def fun_recursion_onlyevendigits(L):
 	if l == 0:
 		return even_arr
 	
+	even_arr = []
 	even_num = 0
 	val = only_even_digits(L.pop(0))
 	print("val", val)
