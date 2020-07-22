@@ -18,6 +18,16 @@ def fun_recursion_onlyevendigits(L):
 	# even_num = 0
 	even_arr.append(only_even_digits(L.pop(0), 0))
 	
+	for i in range(len(even_arr)):
+		val = even_arr[i]
+		rev = 0
+
+		while val > 0:
+			rem = val % 10
+			rev *= 10 + rem
+			val //= 10
+		even_arr[i] = rev
+
 	return fun_recursion_onlyevendigits(L)
 
 def only_even_digits(num, even_num):
