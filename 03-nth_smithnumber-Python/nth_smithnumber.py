@@ -11,7 +11,7 @@ def fun_nth_smithnumber(n):
     if n == 0:
         return 4
 
-    count = 0
+    count = 1
     i = 0
     while count <= n:
         i += 1
