@@ -15,20 +15,23 @@ def fun_recursion_onlyevendigits(L):
 	if l == 0:
 		return even_arr
 
+	global even_num
 	for i in L:
+		even_num = 0
 		even_arr.append(only_even_digits(i))
 	
 	return even_arr
 
 def only_even_digits(num):
-	pos = 0
-	even_num = 0
+	global pos
+	global even_num
 
 	while num > 0:
 		rem = num % 10
 		if rem % 2 == 0:
-			even_num += rem * (pos ** 10)
-			pos += 1
+			even_num = even_num + rem * (pos ** 10)
+			pos = pos + 1
 		num //= 10
 	only_even_digits(num // 10)
+	print(even_num)
 	return even_num
