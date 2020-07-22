@@ -26,7 +26,7 @@ def recursion_binarysearchvalues(L, v):
 
 def bsv(L, v, low, high):
 	if low >= high:
-		print(low, L[low])
+		# print(low, L[low])
 		bsv_arr.append((low, L[low]))
 		
 		if v == L[low]:
@@ -34,10 +34,12 @@ def bsv(L, v, low, high):
 		return L
 
 	mid = (low + high) // 2
-	print(mid, L[mid])
+	# print(mid, L[mid])
 	bsv_arr.append((mid, L[mid]))
 
 	if v < L[mid]:
-		bsv(L, v, low, mid - 1)
+		high = mid - 1
+		bsv(L, v, low, high)
 	else:
-		bsv(L, v, mid + 1, high)
+		low = mid + 1
+		bsv(L, v, low, high)
