@@ -21,8 +21,8 @@ def recursion_binarysearchvalues(L, v):
 	# Your codes goes here
 	global bsv_arr
 	bsv_arr = []
-	bsv(L, v, 0, len(L) - 1)
-	return bsv_arr
+	# bsv(L, v, 0, len(L) - 1)
+	return bsv(L, v, 0, len(L) - 1)
 	pass
 
 def bsv(L, v, low, high):
