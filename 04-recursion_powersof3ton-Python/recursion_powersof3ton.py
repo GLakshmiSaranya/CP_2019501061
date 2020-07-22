@@ -11,7 +11,7 @@ def recursion_powersof3ton(n):
 		if len(power_arr) == 0:
 			return None
 		arr = power_arr.sort()
-		power_arr = []
+		power_arr.clear()
 		return arr
 
 	if divisible_by_3(n):
