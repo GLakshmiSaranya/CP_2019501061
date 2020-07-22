@@ -21,7 +21,7 @@ def recursion_secondlargest(L):
 	if l < 2:
 		return None
 	pos = 0
-	return get_second_largest(L)
+	return get_second_largest(L, 0, 0)
 	pass
 
 def get_second_largest(L, m1, m2):
@@ -37,4 +37,3 @@ def get_second_largest(L, m1, m2):
 		get_second_largest(L, m1, m2)
 	else:
 		return m2
-	return -1
