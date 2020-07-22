@@ -36,7 +36,7 @@ def bsv(L, v, low, high):
 	mid = (low + high) // 2
 	# print(mid, L[mid])
 	bsv_arr.append((mid, L[mid]))
-
+	# print(len(bsv_arr))
 	if v < L[mid]:
 		high = mid - 1
 	else:
