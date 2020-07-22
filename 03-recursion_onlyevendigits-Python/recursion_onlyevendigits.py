@@ -34,8 +34,9 @@ def only_even_digits(num, even_num):
 	if num > 0:
 		rem = num % 10
 		if rem % 2 == 0:
-			even_num *= 10 + rem 
+			even_num *= 10 + rem
+		print(even_num)
 		only_even_digits(num // 10, even_num)
 	
-	print(even_num)
+	print("outside ", even_num)
 	return even_num
