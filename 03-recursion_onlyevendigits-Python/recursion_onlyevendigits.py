@@ -20,10 +20,8 @@ def fun_recursion_onlyevendigits(L):
 		
 	for i in L:
 		even_num = 0
-		# val = only_even_digits(i)
-		# even_arr.append(even_rev(val))
-		even_arr.append(only_even_digits(i))
-
+		val = only_even_digits(i)
+		even_arr.append(even_rev(val))
 	return even_arr
 
 def only_even_digits(num):
@@ -38,6 +36,9 @@ def only_even_digits(num):
 		only_even_digits(num // 10)
 	
 	# print("outside ", even_num)
+	return even_num
+
+def even_rev(num):
 	rev = 0
 	while num > 0:
 		rem = num % 10
@@ -45,13 +46,3 @@ def only_even_digits(num):
 		num //= 10
 	# print("rev", rev)
 	return rev
-# 	return even_num
-
-# def even_rev(num):
-# 	rev = 0
-# 	while num > 0:
-# 		rem = num % 10
-# 		rev = rem + rev * 10
-# 		num //= 10
-# 	# print("rev", rev)
-# 	return rev
