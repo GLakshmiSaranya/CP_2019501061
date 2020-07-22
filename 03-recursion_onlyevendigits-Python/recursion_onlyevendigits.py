@@ -8,14 +8,15 @@
 # Also the function returns the empty list if the original list is empty. 
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
-even_arr = []
+# even_arr = []
 
 def fun_recursion_onlyevendigits(L):
 	l = len(L)
+	even_arr = []
 	global even_num
+	
 	if l == 0:
 		return even_arr
-	
 	even_arr = []
 	even_num = 0
 	val = only_even_digits(L.pop(0))
