@@ -25,7 +25,7 @@ def recursion_secondlargest(L):
 	return m2
 	pass
 
-def get_second_largest(L, n, m1, m2):
+def get_second_largest(L, n):
 	global i
 	i = 0
 
@@ -37,4 +37,4 @@ def get_second_largest(L, n, m1, m2):
 		elif L[i] > m2:
 			m2 = L[i]
 			i += 1
-		get_second_largest(L, i)
+	get_second_largest(L, i)
