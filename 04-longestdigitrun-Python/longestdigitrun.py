@@ -8,14 +8,15 @@
 def longestdigitrun(n):
 	# Your code goes here
 	n = abs(n)
+
 	current_val = n % 10
 	longest_digit_run = current_val
 	longest_digit_count = 1
-
 	count = 0
 
 	while n != 0:
 		rem = n % 10
+		
 		if rem == current_val:
 			count += 1
 		
@@ -27,11 +28,12 @@ def longestdigitrun(n):
 
 			if longest_digit_run < current_val:
 				current_val = longest_digit_run
+			longest_digit_run = count
 		
 		elif count > longest_digit_count:
 			longest_digit_run = current_val
+			longest_digit_run = count
 
-		longest_digit_run = count
 		n //= 10
 
 	return longest_digit_run
