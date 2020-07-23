@@ -28,11 +28,11 @@ def longestdigitrun(n):
 
 			if longest_digit_run < current_val:
 				current_val = longest_digit_run
-			longest_digit_run = count
+			longest_digit_count = count
 		
 		elif count > longest_digit_count:
 			longest_digit_run = current_val
-			longest_digit_run = count
+			longest_digit_count = count
 
 		n //= 10
 
