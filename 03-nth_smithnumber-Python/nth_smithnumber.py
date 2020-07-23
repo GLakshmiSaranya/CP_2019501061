@@ -12,29 +12,30 @@ def fun_nth_smithnumber(n):
         return 4
 
     count = 1
-    i = 0
+    i = 4
     while count <= n:
         i += 1
         if is_smith_number(i):
             count += 1
     return i
 
+
 def is_smith_number(n):
     return digit_sum(n) == sum_prime_fact(n)
 
+
 def digit_sum(n):
     res = 0
-
     while n > 0:
         rem = n % 10
         res += rem
         n //= 10
     return res
 
+
 def sum_prime_fact(n):
     i = 2
     res = 0
-
     while n > 1:
         if n % i == 0:
             res += digit_sum(i)
