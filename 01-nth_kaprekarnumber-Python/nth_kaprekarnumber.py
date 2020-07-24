@@ -13,7 +13,7 @@ def fun_nth_kaprekarnumber(n):
     k_num = 1
     i = 1
 
-    while count <= n:
+    while count < n:
         if is_kaprekarnumber(i):
             count += 1
             k_num = i
