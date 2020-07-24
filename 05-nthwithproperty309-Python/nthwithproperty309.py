@@ -16,7 +16,10 @@ def nthwithproperty309(n):
 
 		for i in range(0, 10):
 			if str(i) not in str_res:
-				break
+				flag = False
+		
+		if flag:
+			count += 1
 
 	return start_num
 
