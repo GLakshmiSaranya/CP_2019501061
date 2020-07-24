@@ -11,7 +11,7 @@ def nthwithproperty309(n):
 	
 	while count <= n:
 		res = start_num ** 5
-		print(res)
+		# print(res)
 		str_res = str(res)
 		flag = True
 
