@@ -8,6 +8,9 @@ def nthpronicnumber(n):
 	count = 0
 	num = 1
 	
+	if n == 0:
+		return num
+	
 	while count < n:
 		num += 1
 		if isPronicNumber(num):
@@ -20,7 +23,7 @@ def isPronicNumber(n):
 
 	while i <= sqr:
 		res = i * (i + 1)
-		if x == res:
+		if n == res:
 			return True
 		i += 1
 	return False
