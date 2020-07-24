@@ -12,18 +12,22 @@
 
 def ishappyprimenumber(n):
     # Your code goes here
-    res = 0
-    count = 0
+    if n == 1:
+        return True
+
+    if n < 10:
+        return False
+
+    if not isPrime(n):
+        return False
     
-    while count <= n:
-        res += 1
-        if ishappynumber(res) and isPrime(res):
-            count += 1
-            
-    return res
+    if isHappyNumber(n):
+        return True
+    
+    return False
     pass
 
-def ishappynumber(n):
+def isHappyNumber(n):
 	if n == 1 or n == 7:
 		return True
 	sum = n
