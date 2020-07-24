@@ -52,6 +52,6 @@ def sumofsquaresofdigit(n):
 	while n > 0:
 		rem = n % 10
 		sqr_digits_sum += rem ** 2
-		sqr //= 10
+		n //= 10
 
 	return sqr_digits_sum 
