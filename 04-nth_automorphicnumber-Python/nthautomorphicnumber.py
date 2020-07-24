@@ -10,14 +10,12 @@ def nthautomorphicnumbers(n):
 
 	if n == 1:
 		return 0
-
-	# if n == 1:
-	# 	return 2
 	
 	while count < n:
-		num += 1
+		# num += 1
 		if isAutoMorphicNumber(num):
 			count += 1
+		num += 1
 	return num
 	pass
 
