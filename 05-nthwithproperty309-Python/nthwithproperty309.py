@@ -6,4 +6,19 @@
 
 def nthwithproperty309(n):
 	# Your code goes here
+	count = 0
+	start_num = 309
+	digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+	while count < n:
+		start_num += 1
+		res = start_num ** 5
+		str_res = list(str(res))
+
+		for i in digits:
+			if i in str_res:
+				count += 1
+
+	return start_num
+
 	pass
