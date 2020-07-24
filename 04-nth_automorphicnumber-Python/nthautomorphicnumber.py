@@ -6,16 +6,12 @@
 def nthautomorphicnumbers(n):
 	# Your code goes here
 	count = 0
-	num = 1
-
-	if n == 1:
-		return 0
+	num = 0
 	
 	while count < n:
-		# num += 1
+		num += 1
 		if isAutoMorphicNumber(num):
 			count += 1
-		num += 1
 	return num
 	pass
 
