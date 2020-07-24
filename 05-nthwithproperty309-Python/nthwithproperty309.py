@@ -22,6 +22,6 @@ def nthwithproperty309(n):
 		if not flag:
 			count += 1
 		start_num += 1
-	return start_num
+	return start_num - 1
 
 	pass
