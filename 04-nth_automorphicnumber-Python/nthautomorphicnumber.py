@@ -8,7 +8,7 @@ def nthautomorphicnumbers(n):
 	count = 0
 	num = 0
 	
-	while count < n:
+	while count <= n:
 		num += 1
 		if isAutoMorphicNumber(num):
 			count += 1
