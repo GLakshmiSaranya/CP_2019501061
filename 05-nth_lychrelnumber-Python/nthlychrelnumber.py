@@ -32,5 +32,4 @@ def reverse(n):
 	return rev
 
 def isPalindrome(n):
-	rev = reverse(n)
-	return n == rev
+	return n == reverse(n)
