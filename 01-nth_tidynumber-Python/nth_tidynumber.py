@@ -8,7 +8,7 @@
 
 def fun_nth_tidynumber(n):
     count = 0
-    num = 1
+    num = 0
 
     while count < n:
         if isTidyNumber(num):
