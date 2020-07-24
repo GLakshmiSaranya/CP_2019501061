@@ -9,19 +9,20 @@ def nthwithproperty309(n):
 	count = 0
 	start_num = 1
 	
-	while count < n:
+	while count <= n:
 		res = start_num ** 5
 		str_res = str(res)
-		flag = False
+		flag = True
 
 		for i in range(0, 10):
 			if str(i) not in str_res:
-				flag = True
+				flag = False
 				break
 		
-		if not flag:
+		if flag:
 			count += 1
 		start_num += 1
+	
 	return start_num - 1
 
 	pass
