@@ -5,4 +5,22 @@
 
 def nthpronicnumber(n):
 	# Your code goes here
-	pass
+	count = 0
+	num = 1
+	
+	while count < n:
+		num += 1
+		if isPronicNumber(num):
+			count += 1
+	return num
+
+def isPronicNumber(n):
+	i = 0
+	sqr = int(n ** 0.5)
+
+	while i <= sqr:
+		res = i * (i + 1)
+		if x == res:
+			return True
+		i += 1
+	return False
