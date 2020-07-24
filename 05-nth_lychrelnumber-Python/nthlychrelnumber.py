@@ -9,7 +9,7 @@ def nthlychrelnumbers(n):
 	count = 0
 	num = 1
 
-	while count <= n:
+	while count < n:
 		num += 1
 		rev = reverse(n)
 		res = n + rev
