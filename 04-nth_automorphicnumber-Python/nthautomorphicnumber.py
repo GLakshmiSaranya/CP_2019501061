@@ -5,8 +5,8 @@
 
 def nthautomorphicnumbers(n):
 	# Your code goes here
-	count = 1
-	num = 0
+	count = 0
+	num = 1
 	
 	while count <= n:
 		num += 1
