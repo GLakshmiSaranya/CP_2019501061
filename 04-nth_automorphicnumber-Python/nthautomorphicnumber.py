@@ -5,4 +5,27 @@
 
 def nthautomorphicnumbers(n):
 	# Your code goes here
+	count = 0
+	num = 1
+	
+	while count < n:
+		num += 1
+		if isAutoMorphicNumber(num):
+			count += 1
+	return num
 	pass
+
+def isAutomorphicNumber(n):
+	sqr = n ** 2
+	digit_count = 0
+
+	while n > 0:
+		n_rem = n % 10
+		s_rem = sqr % 10
+
+		if n_rem != s_rem:
+			return False
+		n //= 10
+		sqr //= 10
+
+	return True
