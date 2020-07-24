@@ -17,12 +17,14 @@ def nthautomorphicnumbers(n):
 
 def isAutoMorphicNumber(n):
 	sqr = n ** 2
+	
 	while n > 0:
 		n_rem = n % 10
 		s_rem = sqr % 10
 
 		if n_rem != s_rem:
 			return False
+		
 		n //= 10
 		sqr //= 10
 
