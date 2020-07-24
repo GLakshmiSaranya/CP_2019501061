@@ -8,8 +8,8 @@ def nthpronicnumber(n):
 	count = 0
 	num = 1
 	
-	if n == 0:
-		return num
+	if n == 1:
+		return 0
 	
 	while count < n:
 		num += 1
