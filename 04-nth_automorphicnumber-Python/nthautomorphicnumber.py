@@ -15,10 +15,8 @@ def nthautomorphicnumbers(n):
 	return num
 	pass
 
-def isAutomorphicNumber(n):
+def isAutoMorphicNumber(n):
 	sqr = n ** 2
-	digit_count = 0
-
 	while n > 0:
 		n_rem = n % 10
 		s_rem = sqr % 10
