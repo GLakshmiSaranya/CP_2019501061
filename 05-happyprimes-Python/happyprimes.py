@@ -20,7 +20,7 @@ def nthHappyNumber(n):
     
     while count <= n:
         res += 1
-        if ishappynumber(res) and isPrime(res):
+        if ishappynumber(res):
             count += 1    
     return res
 
