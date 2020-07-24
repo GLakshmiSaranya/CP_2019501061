@@ -6,16 +6,14 @@
 
 def sumofsquaresofdigit(n):
 	# Your code goes here
-	sqr = n ** 2
-
 	if n < 9:
-		return sqr
+		return n ** 2
 	
 	sqr_digits_sum = 0
 
-	while sqr > 0:
-		rem = sqr % 10
-		sqr_digits_sum += rem
+	while n > 0:
+		rem = n % 10
+		sqr_digits_sum += rem ** 2
 		sqr //= 10
 
 	return sqr_digits_sum 
