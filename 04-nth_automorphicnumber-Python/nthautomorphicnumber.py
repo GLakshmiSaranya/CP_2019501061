@@ -7,6 +7,12 @@ def nthautomorphicnumbers(n):
 	# Your code goes here
 	count = 0
 	num = 1
+
+	if n == 1:
+		return 0
+
+	# if n == 1:
+	# 	return 2
 	
 	while count < n:
 		num += 1
