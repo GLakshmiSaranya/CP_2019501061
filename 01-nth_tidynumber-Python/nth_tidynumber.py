@@ -8,12 +8,12 @@
 
 def fun_nth_tidynumber(n):
     count = 0
-    num = 0
+    num = 1
 
     while count < n:
+        num += 1
         if isTidyNumber(num):
             count += 1
-        num += 1
     return num
 
 def isTidyNumber(n):
