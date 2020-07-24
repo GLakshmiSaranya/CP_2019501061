@@ -12,17 +12,16 @@
 
 def ishappyprimenumber(n):
     # Your code goes here
-    pass
-
-def nthHappyNumber(n):
     res = 0
     count = 0
     
     while count <= n:
         res += 1
-        if ishappynumber(res):
-            count += 1    
+        if ishappynumber(res) and isPrime(res):
+            count += 1
+            
     return res
+    pass
 
 def ishappynumber(n):
 	if n == 1 or n == 7:
@@ -37,6 +36,12 @@ def ishappynumber(n):
 			return True
 		n = sum
 	return False
+
+def isPrime(n):
+	for i in range(2, (n // 2) + 1):
+		if n % i == 0:
+			return False
+	return True
 
 def sumofsquaresofdigit(n):
 	if n < 9:
