@@ -21,6 +21,7 @@ def nthwithproperty309(n):
 				break
 		
 		if flag:
+			print(res)
 			count += 1
 		start_num += 1
 	
