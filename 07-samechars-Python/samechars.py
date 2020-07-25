@@ -9,13 +9,14 @@ def samechars(S):
 	# Your code goes here
 	s1 = S[0]
 	s2 = S[1]
-	
-	if s1 == s2:
-		return True
-	s1 = set(s1)
-	s2 = set(s2)
 
-	if len(s1) == len(s2) and sorted(s1) == sorted(s2):
-		return True
+	if type(s1) == type(s2):
+		if s1 == s2:
+			return True
+		s1 = set(s1)
+		s2 = set(s2)
+
+		if len(s1) == len(s2) and sorted(s1) == sorted(s2):
+			return True
 	return False
 	pass
