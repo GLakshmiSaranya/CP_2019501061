@@ -6,8 +6,8 @@
 
 def nthlychrelnumbers(n):
 	# your code goes here
-	count = 0
-	num = 1
+	count = 1
+	num = 196
 
 	while count < n:
 		num += 1
