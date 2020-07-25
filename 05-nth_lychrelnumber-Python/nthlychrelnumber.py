@@ -14,7 +14,7 @@ def nthlychrelnumbers(n):
 		rev = reverse(n)
 		res = n + rev
 
-		if not isPalindrome(res):
+		if isPalindrome(res) == False:
 			count += 1
 
 	return num
