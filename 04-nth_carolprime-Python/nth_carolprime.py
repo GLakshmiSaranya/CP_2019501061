@@ -8,6 +8,15 @@
 # Hint: you may need to generate only Carol numbers, and then test those as you go 
 # for primality (and you may need to think about that hint for a while for it to make sense!).
 
-
 def fun_nth_carolprime(n):
-    return 0
+    count = 0
+    num = 2
+    
+    while count < n:
+        carol_num = ((2 ** num - 1) ** 2 - 2)
+        num += 1
+        count += 1
+        
+    res = ((2 ** num - 1) ** 2 - 2)
+    return res
+    pass
