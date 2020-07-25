@@ -7,4 +7,10 @@
 
 def samechars(s1, s2):
 	# Your code goes here
+	s1 = set(s1)
+	s2 = set(s2)
+
+	if len(s1) == len(s2) and sorted(s1) == sorted(s2):
+		return True
+	return False
 	pass
