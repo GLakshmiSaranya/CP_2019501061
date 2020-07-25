@@ -34,10 +34,9 @@ def isPrime(n):
 
 def isCircularPrime(n):
 	dig_count = digitcount(n)
+	str_n = str(n)
 
 	if isPrime(n):
-		str_n = str(n)
-
 		for i in range(0, 10, 2):
 			if str(i) in str_n:
 				return False
