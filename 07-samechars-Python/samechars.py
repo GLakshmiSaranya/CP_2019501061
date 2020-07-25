@@ -7,6 +7,9 @@
 
 def samechars(s1, s2):
 	# Your code goes here
+
+	if s1 == s2:
+		return True
 	s1 = set(s1)
 	s2 = set(s2)
 
