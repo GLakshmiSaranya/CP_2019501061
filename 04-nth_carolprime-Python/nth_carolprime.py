@@ -17,6 +17,6 @@ def fun_nth_carolprime(n):
         num += 1
         count += 1
         
-    res = ((2 ** num - 1) ** 2 - 2)
-    return res
+    carol_num = ((2 ** num - 1) ** 2 - 2)
+    return carol_num
     pass
