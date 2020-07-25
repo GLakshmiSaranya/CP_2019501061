@@ -17,7 +17,6 @@ def nthlychrelnumbers(n):
 		if not isPalindrome(res):
 			count += 1
 
-		num += 1
 	return num
 	pass
 
