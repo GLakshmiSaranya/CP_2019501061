@@ -5,9 +5,11 @@
 # case-sensitive, so "ABC" and "abc" do not contain the same characters. The function returns False if either 
 # parameter is not a string, but returns True if both strings are empty (why?).
 
-def samechars(s1, s2):
+def samechars(S):
 	# Your code goes here
-
+	s1 = S[0]
+	s2 = S[1]
+	
 	if s1 == s2:
 		return True
 	s1 = set(s1)
