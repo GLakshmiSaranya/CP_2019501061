@@ -14,7 +14,7 @@ class hasbalancedparantheses {
 		int len = s.length();
 
 		if (len == 0) {
-			return True;
+			return true;
 		}
 		
 		Stack<Character> st = new Stack<Character>();
@@ -28,13 +28,13 @@ class hasbalancedparantheses {
 
 			if (ch == ')') {
 				if (st.isEmpty()) {
-					return False;
+					return false;
 				}
 				 
 				if (st.peek() == '(') {
 					st.pop();
 				} else {
-					return False;
+					return false;
 				}
 			}
 		}
@@ -42,7 +42,6 @@ class hasbalancedparantheses {
 		return st.isEmpty();
 	}
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 	}
 }
