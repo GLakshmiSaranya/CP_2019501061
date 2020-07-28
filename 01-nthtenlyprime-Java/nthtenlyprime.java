@@ -44,7 +44,6 @@ class nthtenlyprime {
                 return false;
             }
         }
-
         return true;
     }
 }
